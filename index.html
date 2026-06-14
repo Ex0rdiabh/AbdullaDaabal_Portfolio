@@ -364,6 +364,32 @@ nav{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:40px}
       </div>
       <button class="btn-gold" onclick="openCircularBlog()">Read Full Article</button>
     </div>
+    <div class="bcard">
+  <div class="bdate">June 2026</div>
+
+  <div class="btit">
+    Small Steps, Big Wins: Why Kaizen Outperforms Bold Transformations in Supply Chain Optimization
+  </div>
+
+  <div class="bsum">
+    While many organisations chase large-scale transformation projects,
+    evidence shows that continuous improvement through Kaizen often delivers
+    more sustainable operational gains. This article explores how small,
+    consistent improvements outperform disruptive overhauls in supply chain
+    performance, employee engagement, and long-term resilience.
+  </div>
+
+  <div class="btags">
+    <span class="btag">Kaizen</span>
+    <span class="btag">Continuous Improvement</span>
+    <span class="btag">Supply Chain</span>
+    <span class="btag">Operations</span>
+  </div>
+
+  <button class="btn-gold" onclick="openKaizenBlog()">
+    Read Full Article
+  </button>
+</div>
   </div>
 </div>
 
@@ -407,6 +433,21 @@ nav{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:40px}
   </div>
   <iframe class="ovfr" id="cb-fr" src=""></iframe>
 </div>
+  <!-- KAIZEN BLOG DOC OVERLAY -->
+<div class="ov" id="kb-ov">
+  <div class="ovbar">
+    <span class="ovtit">
+      Small Steps, Big Wins: Why Kaizen Outperforms Bold Transformations in Supply Chain Optimization — Abdulla Daabal
+    </span>
+
+    <div class="ovbtns">
+      <button class="ovdl" onclick="dlKaizenBlog()">Download</button>
+      <button class="ovcl" onclick="closeKaizenBlog()">✕ Close</button>
+    </div>
+  </div>
+
+  <iframe class="ovfr" id="kb-fr" src=""></iframe>
+</div>
 
 <script>
 // FILE DATA — injected by build script
@@ -415,6 +456,7 @@ var _blog = "data:application/vnd.openxmlformats-officedocument.wordprocessingml
 
 var CV_FILE = 'assets/Abdulla_Daabal_CV.pdf';
 var CIRCULAR_BLOG_PDF = 'assets/Circular_Economy_Blog_Abdulla_Daabal.pdf';
+var _kaizenBlog= 'assets/Kaizen_Blog_Supply_Chain.pdf';
 
 function b2b(u){
   var a=u.split(','), m=a[0].match(/:(.*?);/)[1], s=atob(a[1]);
