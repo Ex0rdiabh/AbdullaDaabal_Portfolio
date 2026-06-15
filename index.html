@@ -580,6 +580,21 @@ function closeCircularBlog(){
   document.getElementById('cb-ov').classList.remove('open');
   document.getElementById('cb-fr').src='';
 }
+  function dlKaizenBlog(){
+  dlEmbed(
+    _kaizenBlog,
+    'Small_Steps_Big_Wins_Kaizen_Supply_Chain.pdf'
+  );
+}
+  function openKaizenBlog(){
+  document.getElementById('kb-ov').classList.add('open');
+  document.getElementById('kb-fr').src = _kaizenBlog;
+}
+
+function closeKaizenBlog(){
+  document.getElementById('kb-ov').classList.remove('open');
+  document.getElementById('kb-fr').src = '';
+}
 </script>
 </body>
 </html>
